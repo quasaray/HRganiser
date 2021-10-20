@@ -1,0 +1,27 @@
+{
+  "hRganiserApp": {
+    "sector": {
+      "home": {
+        "title": "Sectors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sector",
+        "createOrEditLabel": "Create or edit a Sector",
+        "search": "Search for Sector",
+        "notFound": "No Sectors found"
+      },
+      "created": "A new Sector is created with identifier {{ param }}",
+      "updated": "A Sector is updated with identifier {{ param }}",
+      "deleted": "A Sector is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sector {{ id }}?"
+      },
+      "detail": {
+        "title": "Sector"
+      },
+      "id": "ID",
+      "sectorName": "Sector Name",
+      "employees": "Employees",
+      "departments": "Departments"
+    }
+  }
+}

@@ -51,6 +51,23 @@ public class CacheConfiguration {
             createCache(cm, com.quasaray.hrganiser.domain.User.class.getName());
             createCache(cm, com.quasaray.hrganiser.domain.Authority.class.getName());
             createCache(cm, com.quasaray.hrganiser.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.quasaray.hrganiser.domain.Organisation.class.getName());
+            createCache(cm, com.quasaray.hrganiser.domain.Organisation.class.getName() + ".staff");
+            createCache(cm, com.quasaray.hrganiser.domain.Organisation.class.getName() + ".employees");
+            createCache(cm, com.quasaray.hrganiser.domain.Location.class.getName());
+            createCache(cm, com.quasaray.hrganiser.domain.Location.class.getName() + ".employees");
+            createCache(cm, com.quasaray.hrganiser.domain.Department.class.getName());
+            createCache(cm, com.quasaray.hrganiser.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.quasaray.hrganiser.domain.Sector.class.getName());
+            createCache(cm, com.quasaray.hrganiser.domain.Sector.class.getName() + ".employees");
+            createCache(cm, com.quasaray.hrganiser.domain.Sector.class.getName() + ".departments");
+            createCache(cm, com.quasaray.hrganiser.domain.Employee.class.getName());
+            createCache(cm, com.quasaray.hrganiser.domain.Employee.class.getName() + ".skills");
+            createCache(cm, com.quasaray.hrganiser.domain.Job.class.getName());
+            createCache(cm, com.quasaray.hrganiser.domain.Job.class.getName() + ".employeds");
+            createCache(cm, com.quasaray.hrganiser.domain.HasSkill.class.getName());
+            createCache(cm, com.quasaray.hrganiser.domain.Skill.class.getName());
+            createCache(cm, com.quasaray.hrganiser.domain.Skill.class.getName() + ".users");
             // jhipster-needle-ehcache-add-entry
         };
     }

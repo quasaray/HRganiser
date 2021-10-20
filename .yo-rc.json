@@ -42,6 +42,8 @@
     "devServerPort": 9060,
     "clientPackageManager": "npm",
     "languages": ["en"],
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["Organisation", "Location", "Department", "Sector", "Employee", "Job", "HasSkill", "Skill"],
+    "lastLiquibaseTimestamp": 1634721719000
   }
 }

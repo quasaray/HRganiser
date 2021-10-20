@@ -1,0 +1,11 @@
+id;first_name;last_name;known_as;email;doj;dod;dob;active;resume;resume_content_type;job_level
+1;Lola;Rogahn;Account Soft;Michel.Goyette@yahoo.com;2021-10-20;2021-10-20;2021-10-19;false;../fake-data/blob/hipster.png;image/png;Junior
+2;Lynn;Buckridge;frame Tuna;Aurelia97@yahoo.com;2021-10-19;2021-10-20;2021-10-20;false;../fake-data/blob/hipster.png;image/png;Senior
+3;Dominic;Champlin;Underpass;Macy84@hotmail.com;2021-10-20;2021-10-20;2021-10-19;false;../fake-data/blob/hipster.png;image/png;Junior
+4;Gavin;Dibbert;orchestrate Global Germany;Junior54@gmail.com;2021-10-19;2021-10-19;2021-10-19;false;../fake-data/blob/hipster.png;image/png;Junior
+5;Ignatius;Champlin;value-added;Fern.Ortiz73@gmail.com;2021-10-19;2021-10-19;2021-10-19;false;../fake-data/blob/hipster.png;image/png;Junior
+6;Verner;Weber;deposit Soap Marketing;Destini.Daniel99@yahoo.com;2021-10-19;2021-10-19;2021-10-19;false;../fake-data/blob/hipster.png;image/png;Junior
+7;Vicky;Kemmer;24;Louie_Lang24@yahoo.com;2021-10-20;2021-10-20;2021-10-20;false;../fake-data/blob/hipster.png;image/png;Senior
+8;Rory;Price;Bacon Officer;Christ_Kemmer0@gmail.com;2021-10-19;2021-10-20;2021-10-20;false;../fake-data/blob/hipster.png;image/png;Junior
+9;Peggie;Runolfsson;Bedfordshire;Kendall_Barton@hotmail.com;2021-10-20;2021-10-20;2021-10-19;false;../fake-data/blob/hipster.png;image/png;Junior
+10;Casper;Hayes;withdrawal;Magnolia62@gmail.com;2021-10-19;2021-10-19;2021-10-20;false;../fake-data/blob/hipster.png;image/png;Senior

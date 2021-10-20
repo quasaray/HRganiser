@@ -1,0 +1,29 @@
+{
+  "name": "Location",
+  "fields": [
+    {
+      "fieldName": "locName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "loc",
+      "relationshipName": "employees",
+      "otherEntityField": "firstName"
+    }
+  ],
+  "entityTableName": "location",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211020092153"
+}

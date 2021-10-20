@@ -7,6 +7,14 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "organisation": "Organisation",
+        "location": "Location",
+        "department": "Department",
+        "sector": "Sector",
+        "employee": "Employee",
+        "job": "Job",
+        "hasSkill": "Has Skill",
+        "skill": "Skill",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

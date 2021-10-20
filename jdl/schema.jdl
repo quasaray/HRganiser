@@ -1,0 +1,79 @@
+entity Organisation {
+	orgName String required
+}
+
+entity Location {
+	locName String required
+}
+
+entity Department {
+	departmentName String required
+}
+
+entity Sector {
+	sectorName String required
+}
+
+entity Employee {
+	firstName String,
+	lastName String,
+    knownAs String
+	email String,
+	doj LocalDate,
+    dod LocalDate,
+    dob LocalDate,
+    active Boolean,
+    resume Blob,
+    jobLevel JobLevel
+}
+
+enum JobLevel{
+	Junior,Senior
+}
+
+entity Job {
+	jobTitle String required unique
+}
+
+enum SkillLevel {
+	Basic,Intermediate,Advanced
+}
+
+entity HasSkill {
+	level SkillLevel required
+}
+
+entity Skill{
+	skillName String required unique
+}
+
+relationship ManyToOne {
+	Employee{manager(firstName)} to Employee
+}
+
+relationship ManyToOne {
+	Employee{org(orgName)} to Organisation{employees(firstName)}
+    Employee{loc(locName)} to Location{employees(firstName)}
+    Employee{dept(departmentName)} to Department{employees(firstName)}
+    Employee{sect(sectorName)} to Sector{employees(firstName)}
+    Department{belongsTo(sectorName)} to Sector {departments(departmentName)}
+    Employee{job(jobTitle)} to Job{employed(firstName)}
+}
+
+relationship OneToMany {
+    Skill{users} to HasSkill{skill required}
+    Employee{skills} to HasSkill{employee required}
+}
+
+relationship ManyToMany {
+	Organisation{staff} to User
+}
+
+// Set pagination options
+paginate Employee with infinite-scroll
+paginate Job with pagination
+paginate Skill with pagination
+
+// Set service options to all except few
+service all with serviceImpl
+filter all except HasSkill

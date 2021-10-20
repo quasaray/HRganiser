@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+    <!--
+        Added the constraints for entity Employee.
+    -->
+    <changeSet id="20211020092156-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="manager_id"
+                                 baseTableName="employee"
+                                 constraintName="fk_employee__manager_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="employee"/>
+
+        <addForeignKeyConstraint baseColumnNames="org_id"
+                                 baseTableName="employee"
+                                 constraintName="fk_employee__org_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="organisation"/>
+
+        <addForeignKeyConstraint baseColumnNames="loc_id"
+                                 baseTableName="employee"
+                                 constraintName="fk_employee__loc_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="location"/>
+
+        <addForeignKeyConstraint baseColumnNames="dept_id"
+                                 baseTableName="employee"
+                                 constraintName="fk_employee__dept_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="department"/>
+
+        <addForeignKeyConstraint baseColumnNames="sect_id"
+                                 baseTableName="employee"
+                                 constraintName="fk_employee__sect_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sector"/>
+
+        <addForeignKeyConstraint baseColumnNames="job_id"
+                                 baseTableName="employee"
+                                 constraintName="fk_employee__job_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="job"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,107 @@
+{
+  "name": "Employee",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "knownAs",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "doj",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dod",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dob",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "resume",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "jobLevel",
+      "fieldType": "JobLevel",
+      "fieldValues": "Junior,Senior"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "hasSkill",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "skills"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "manager",
+      "otherEntityField": "firstName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "organisation",
+      "otherEntityRelationshipName": "employees",
+      "relationshipName": "org",
+      "otherEntityField": "orgName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "employees",
+      "relationshipName": "loc",
+      "otherEntityField": "locName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "department",
+      "otherEntityRelationshipName": "employees",
+      "relationshipName": "dept",
+      "otherEntityField": "departmentName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "sector",
+      "otherEntityRelationshipName": "employees",
+      "relationshipName": "sect",
+      "otherEntityField": "sectorName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "job",
+      "otherEntityRelationshipName": "employed",
+      "relationshipName": "job",
+      "otherEntityField": "jobTitle"
+    }
+  ],
+  "entityTableName": "employee",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211020092156"
+}

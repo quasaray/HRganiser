@@ -1,0 +1,10 @@
+{
+  "hRganiserApp": {
+    "SkillLevel": {
+      "null": "",
+      "Basic": "Basic",
+      "Intermediate": "Intermediate",
+      "Advanced": "Advanced"
+    }
+  }
+}

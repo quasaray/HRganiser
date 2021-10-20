@@ -1,0 +1,37 @@
+{
+  "name": "HasSkill",
+  "fields": [
+    {
+      "fieldName": "level",
+      "fieldType": "SkillLevel",
+      "fieldValues": "Basic,Intermediate,Advanced",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "skill",
+      "otherEntityRelationshipName": "users",
+      "relationshipValidateRules": "required",
+      "relationshipName": "skill"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "skills",
+      "relationshipValidateRules": "required",
+      "relationshipName": "employee"
+    }
+  ],
+  "entityTableName": "has_skill",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211020092158"
+}
